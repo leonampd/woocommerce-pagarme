@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  wp:
+    build: ./docker
+    volumes:
+      - .:/usr/src/wordpress/wp-content/plugins/woocommerce-pagarme
+    ports:
+      - "80:80"
